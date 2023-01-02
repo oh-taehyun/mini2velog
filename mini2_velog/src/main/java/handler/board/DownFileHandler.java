@@ -28,7 +28,7 @@ public class DownFileHandler implements Handler {
 		}
 
 		// 다운로드 폴더
-		String downDir = "C:\\Users\\kosta\\Desktop\\255\\MyJAVA\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\webapps\\down\\";
+		String downDir = "C:\\255\\Myjava\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\webapps\\ori\\";
 		// 사용자가 클릭한 파일명
 		String fname = request.getParameter("fname");
 		// 다운로드할 파일 전체 경로

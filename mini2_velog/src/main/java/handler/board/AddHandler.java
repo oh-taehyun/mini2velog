@@ -31,7 +31,7 @@ public class AddHandler implements Handler {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
 
-		String path = "C:\\Users\\kosta\\Desktop\\255\\MyJAVA\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\webapps\\down\\";
+		String path = "C:\\255\\Myjava\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\webapps\\ori\\";
 
 		int size = 100 * 1024 * 1024;
 
