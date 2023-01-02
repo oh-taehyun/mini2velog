@@ -1,0 +1,24 @@
+{
+  "name": "design-to-code_blog",
+  "version": "1.0.0",
+  "description": "design to code - blog detail page",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "keywords": [
+    "blog",
+    "design-to-code",
+    "tutorial",
+    "튜토리얼",
+    "웹퍼블리싱",
+    "퍼블리싱",
+    "블로그"
+  ],
+  "author": "hyunki, bae",
+  "license": "MIT",
+  "homepage": "https://illustudio.github.io/design-to-code_blog",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

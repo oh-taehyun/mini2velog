@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+.site__container{
+  position: relative;
+  background-color: #f8f8f8;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.site__container::before,
+.site__container::after{
+  position:absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('./src/background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:center top;
+  left:0;
+}
+.site__container::before{
+  min-height: 460px;
+  top:0;
+  z-index: -1;
+}
+.site__container::after{
+  min-height: 230px;
+  transform: rotate(180deg);
+  bottom:0;
+  z-index: -2;
+}
+/* header,navigation 영역 */
+.site__header{
+  width: 100%;
+  border-bottom: 1px solid #c7d2fe;
+  margin-bottom: 64px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  margin-left:auto;
+  margin-right: auto;
+  height: 80px;
+  width: 960px;    
+}
+
+.logo {
+  color: #4f46e5;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.logo span{
+  color: #222;
+}
+
+.nav .nav-menu{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav .nav-menu a{
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav .nav-menu .contact{
+  background-color: #4f46e5;  
+  padding: 8px 12px;
+  border-radius: 2rem;
+}
+.nav .nav-menu .contact a{
+  color:white;
+}
+
+/* -------------- post 영역 -------------- */
+.post{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post .container{      
+  display: flex;      
+}
+.post .container .content{
+  width: 960px;
+}
+
+.post-content{
+  padding-top:64px;
+  padding-bottom: 64px;
+  padding-left: 96px;
+  padding-right: 96px;
+  background-color: white;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px #d2dae5);
+}
+
+/* -------------- 여기부터 포스트 css --------------- */
+.post-content input[type=text]{
+	width: 100%;
+	height: 60px;
+	font-size: 35px;
+	margin: 20px 0 20px 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #999;
+  font-family: 'Montserrat';
+}
+.post-content input[type=text]::placeholder{
+  color: #bfbfbf;
+}
+.post-content input[type=text]:focus,
+.post-content input[type=text]:active{
+  border: 2px solid #ada9f3;
+  background-color:#e4e3fb;
+}
+.post-content input[type=file]{
+  	font-size: 14px;
+  font-family: 'Montserrat';
+}
+.post-content input[type=file]::file-selector-button{
+	width: 120px;
+	height: 40px;
+	outline: none;
+  	border: none;
+  	border-radius: 5px;
+	background-color: #4f46e5;
+	color: white;
+  	font-size: 14px;
+  	cursor: pointer;
+}
+.post-content textarea{
+  font-family: 'Montserrat';
+	width:100%;
+	min-height: 500px;
+	resize:none;
+	margin: 20px 0 20px 0;
+  	font-size: 18px;	
+  	  outline: none;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #999;
+}
+.post-content textarea:focus,
+.post-content textarea:active{
+  border: 2px solid #ada9f3;
+  background-color:#e4e3fb;
+}
+.post-content textarea::placeholder{
+  color: #bfbfbf;
+}
+.post-content input[type=submit]{
+  font-family: 'Montserrat';
+  	background-color: #4f46e5;
+	color: white;
+	width: 120px;
+	height: 40px;
+	outline: none;
+  	border: none;
+  	border-radius: 5px;
+  	float: right;
+  	margin: 0px 0 20px 0;
+}
+
+/* 글목록 버튼 */
+input.commentWtBt {
+  font-family: 'Montserrat';
+	background-color: #4f46e5;
+	color: white;
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 120px;
+	height: 40px;
+	background-color: #4f46e5;  
+  	outline: none;
+  	border: none;
+  	border-radius: 5px;
+  	font-size: 17px;
+}
